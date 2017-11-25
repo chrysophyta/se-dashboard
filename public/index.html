@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Self Emotion Dashboard</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+	<div id="root"></div>
+	<nav>
+		<ul>
+			<li class="logo"><a href="index.html"></a></li>
+			<li class="empty"></li>
+			<li class="welcome">Hi, Justin</li>
+			<li class="nav-item"><a href="#"><i data-feather="settings"></i>Account</a></li>
+			<li class="nav-item"><a href="#"><i data-feather="power"></i>Logout</a></li>
+		</ul>
+		
+	</nav>
+	<div class="wrapper">
+		<div class="sidebar">
+			<ul>
+				<li><a href="index.html"><i data-feather="home"></i>Dashboard</a></li>
+				<li><a href="students.html"><i data-feather="user"></i>Students</a></li>
+				<li><a href="tasks.html"><i data-feather="check-square"></i>Tasks</a></li>
+				<li><a href="games.html"><i data-feather="grid"></i>Games</a></li>
+			</ul>
+		</div>
+		
+		<div class="content">
+		
+			<div class="left">
+				<div class="card news">
+					<p class="card-title">News</p>
+				</div>
+				<div class="card class-overview">
+					<p class="card-title">Class Overviews</p>
+				</div>
+				<div class="card tasks">
+					<p class="card-title">Tasks</p>
+				</div>
+			</div>
+
+			<div class="right">
+				<div class="card calender">
+					<p class="card-title">Calendar</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<script>
+  	feather.replace()
+	</script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+:root {
+  --light-grey: #F7F7F7;
+  --light-blue: #46A9D4;
+  --sidebar-bg:rgba(0,123,149,1);
+  --sidebar-hover:rgba(0,163,184,1);
+  --dark-blue: #445A63;
+  --regular: 16px;
+  --large:18px;
+  --title:20px;
+}
+
+body {
+  box-sizing: border-box;
+  margin:0;
+  height: 100vh;
+  background: var(--light-grey);
+  font-family: 'Lato';
+  text-align: center;
+}
+
+ul>li>a{
+  color:white;
+  text-decoration: none;
+}
+
+ul{
+  margin:0;
+  -webkit-padding-start:0;
+  list-style: none;
+}
+
+i{
+  font-size: 20px;
+}
+
+svg {
+  transform: translateY(18%);
+  margin-right: 10px;
+}
+
+
+
+/*======== Nav =========*/
+
+.logo {
+  background-image: url('img/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  height: 35px;
+  width: 200px;
+  margin-left: 30px;
+  transform: translateY(50%);
+}
+.empty {
+  flex: 5;
+}
+
+.nav-item, .welcome{
+  flex: 1;
+}
+
+nav {
+  background: var(--light-blue);
+  height:80px;
+  font-size: var(--large);
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+nav>ul {
+  display: flex;
+  height:100%;
+  align-items:baseline;
+  
+}
+
+nav ul li {
+  margin:10px;
+  min-width: 120px;
+}
+
+
+.welcome {
+  font-weight: 300;
+  color: white;
+}
+/*======== Wrapper (that wraps .sidebar and .content) =========*/
+.wrapper {
+  display: flex;
+  height:770px;
+  align-items: stretch;
+}
+
+
+/*======== Sidebar =========*/
+
+.sidebar {
+  background: var(--sidebar-bg);
+  min-width: 240px;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar li {
+  color: white;
+  height: 75px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-left:50px;
+  font-size:var(--large);
+}
+
+.sidebar li:hover {
+  background: var(--sidebar-hover);
+}
+.sidebar li a {
+
+}
+
+
+
+/*======== Card Style =========*/
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  padding:10px;
+}
+
+/*======== Card Style =========*/
+
+.card {
+  box-sizing: border-box;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  height: 100%;
+}
+
+.card-title {
+  font-size: var(--title);
+  font-weight: 300;
+  text-align: left; 
+  margin: 0;
+}
+
+.left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right:5px;
+}
+
+.left .card {
+  
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.right .card{
+  width: 100%;
+
+}
+
+.news {
+  flex: 1;
+}
+
+.class-overview {
+  margin:10px 0px 10px 0px;
+}
