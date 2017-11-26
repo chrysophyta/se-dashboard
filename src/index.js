@@ -6,3 +6,6 @@ import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
+
+const feather = require('feather-icons');
+feather.replace()

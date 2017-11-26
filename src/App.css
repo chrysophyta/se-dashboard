@@ -175,10 +175,10 @@ nav ul li {
 
 }
 
-.news {
+.left :nth-child(1) {
   flex: 1;
 }
 
-.class-overview {
+.left :nth-child(2) {
   margin:10px 0px 10px 0px;
 }
